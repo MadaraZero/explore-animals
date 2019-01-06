@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Explore Animals</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" >
+</head>
+
+<body onload="myFunction()">
+<!-- <body> -->
+<header>
+    <h1 class="h1-class header-font-color">Explore Animals</h1>
+</header>
+
+<!-- Animal slideshow -->
+<div class="slideshow-container" cite="https://www.nationalgeographic.org/photoark/explore/">
+
+    <div>
+        <img class="mySlides fade" style="transform: scaleX(-1)" src="img/bat_1_header.jpg" alt="bat">
+        <img class="mySlides fade" src="img/bobcat_1_header.jpg" alt="bobcat">
+        <img class="mySlides fade" src="img/butterfly_1_header.jpg" alt="butterfly">
+        <img class="mySlides fade" src="img/curassow_1_header.jpg" alt="curassow">
+        <img class="mySlides fade" src="img/eider_1_header.jpg" alt="eider">
+        <img class="mySlides fade" src="img/geck_1_header.jpg" alt="gecko">
+        <img class="mySlides fade" src="img/monal_1_header.jpg" alt="monal">
+        <img class="mySlides fade" src="img/monkey_1_header.jpg" alt="monkey">
+        <img class="mySlides fade" src="img/monkey_2_header.jpg" alt="monkey2">
+        <img class="mySlides fade" src="img/peacock_1_header.jpg" alt="peacock">
+        <!-- <img class="logo" img src="img/graphics/logo.png" alt="logo"> -->
+        <div class="circle"></div>
+    </div>
+
+</div>
+
+<!-- Content 1 - Introduction -->
+<section class="introduction">
+    <h1 class="header-font-color" style="margin-bottom: 5px">About</h1>
+    <p class="paragraph-font-color">Welcome to Explore Animals an educational website aimed to learn about animals in a fun and engaging manner. Click on an animal to learn about it. Complete the mini-quiz without making any mistakes. Doing so will give you points and achievements!</p>
+</section>
+
+
+<!-- Loader animation -->
+<div id="loader">
+<div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+
+    <!-- Hides content until loader animation is finished. -->
+    <div style="display:none;" id="table-content">
+
+
+
+        <!-- Content 2 - Explore -->
+        <section class="explore">
+            <table class="image-table">
+                <tbody>
+                    <tr>
+                        <td><img id="explore-img" src="img/1.jpg"></td>
+                        <td><img id="explore-img" src="img/2.jpg"></td>
+                        <td><img id="explore-img" src="img/3.jpg"></td>
+                        <td><img id="explore-img" src="img/4.jpg"></td>
+                    </tr>
+
+                    <tr>
+                        <td><img id="explore-img" src="img/5.jpg"></td>
+                        <td><img id="explore-img" src="img/6.jpg"></td>
+                        <td><img id="explore-img" src="img/7.jpg"></td>
+                        <td><img id="explore-img" src="img/8.jpg"></td>
+                    </tr>
+
+                    <tr>
+                        <td><img id="explore-img" src="img/9.jpg"></td>
+                        <td><img id="explore-img" src="img/10.jpg"></td>
+                        <td><img id="explore-img" src="img/11.jpg"></td>
+                        <td><img id="explore-img" src="img/12.jpg"></td>
+                    </tr>
+
+                    <tr>
+                        <td><img id="explore-img" src="img/13.jpg"></td>
+                        <td><img id="explore-img" src="img/14.jpg"></td>
+                        <td><img id="explore-img" src="img/15.jpg"></td>
+                        <td><img id="explore-img" src="img/16.jpg"></td>
+                    </tr>
+
+                    <tr>
+                        <td><img id="explore-img"  class="zoom" src="img/17.jpg"></td>
+                        <td><img id="explore-img"  class="zoom" src="img/18.jpg"></td>
+                        <td><img id="explore-img"  class="zoom" src="img/19.jpg"></td>
+                        <td><img id="explore-img"  class="zoom" src="img/20.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    <!-- Content 3 - Progress -->
+    <section class="progress">
+        <h1 class="header-font-color" style="text-align: center">Progress</h1>
+    </section>
+</div>
+
+
+<script>
+// Slide-show script ======================================================= //
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+// Image loader script ====================================================== //
+var myVar;
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("table-content").style.display = "block";
+}
+</script>
+
+
+</body>
+
+<!-- Footer -->
+<footer>
+</footer>
+
+
+
+</html>
