@@ -43,6 +43,7 @@ section.introduction {
     box-sizing: border-box;
     background-color: #151314;
     margin: 0px;
+    margin-bottom: 5px;
     padding: 30px 75px 30px 75px;
 }
 /* End Introduction website section -- */
@@ -85,10 +86,10 @@ section.progress {
     background-color: #151314;
     float: left;
     position: relative;
-    width: 29%;
+    width: 29.7%;
     padding: 50px;
-    margin-left: 10px;
-    margin-top: 13px;
+    padding-left: 50px;
+    margin-top: 11px;
 
 }
 /* End Progress website section -- */
@@ -181,33 +182,47 @@ section.progress {
 
 
 /* Image gallery hover ======================= */
+
+    /* Effect 1 - Scales image upon hover. */
 .zoom {
-  padding: 5px;
-  background-color: white;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
+}   /* End Effect */
+
+
+    /* Effect 2 - Zooms on image upon hover.*/
+.img-container {
+    position: relative;
+    width: 317px;
+    height: 211px;
+    border: 5px;
+    border: solid;
+    border-color: #212121;
+    overflow: hidden;
 }
 
-.item-img {
+.img-item {
     position: absolute;
     top: 0;
     left: 0;
- }
-
- .item-img img {
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
 }
 
-.explore-img:hover .item-img img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+.img-item img {
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
 }
-/* End Image hover -- */
+
+.img-container:hover .img-item img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}   /* End Effect */
+/* End image gallery hover -- */
 
 
 /* Slideshow ================================= */
