@@ -6,14 +6,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Rubik:300" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" >
 </head>
 
 <body onload="myFunction()">
-<!-- <body> -->
-<header>
-    <h1 class="h1-class header-font-color">Explore Animals</h1>
-</header>
+
+
+<!-- Header section of the website -->
+<div>
+    <hr/>
+        <header>
+            <h1 class="h1-class header-font-color">Explore Animals</h1>
+            <img class="logo" src="img/graphics/logo-a.png" alt="logo">
+
+            <!-- Button place holders -->
+            <div class="bttns-container">
+                <h1 class="donate-bttn">DONATE</h1>
+                <img class="login-icon" src="img/graphics/login-icon.png" alt="login-icon">
+                <img class="search-icon" src="img/graphics/search-icon.png" alt="search-icon">
+            </div>
+        </header>
+    <hr/>
+</div>
+
 
 <!-- Animal slideshow -->
 <div class="slideshow-container" cite="https://www.nationalgeographic.org/photoark/explore/">
@@ -29,28 +45,32 @@
         <img class="mySlides fade" src="img/monkey_1_header.jpg" alt="monkey">
         <img class="mySlides fade" src="img/monkey_2_header.jpg" alt="monkey2">
         <img class="mySlides fade" src="img/peacock_1_header.jpg" alt="peacock">
-        <!-- <img class="logo" img src="img/graphics/logo.png" alt="logo"> -->
         <div class="circle"></div>
     </div>
 
 </div>
 
-<!-- Content 1 - Introduction -->
+
+<!-- Content 1 - About/Introduction -->
+<hr/>
 <section class="introduction">
     <h1 class="header-font-color" style="margin-bottom: 5px">About</h1>
     <p class="paragraph-font-color">Welcome to Explore Animals an educational website aimed to learn
         about animals in a fun and engaging manner. Click on an animal to learn about it. Complete the
         mini-quiz without making any mistakes. Doing so will give you points and achievements!</p>
 </section>
+<hr/>
 
 
-<div id="loader">
+
 <!-- Loader animation -->
+<div id="loader">
 <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div>
 </div><div></div><div></div></div>
 </div>
 
-<!-- Hides content until loader animation is finished. -->
+
+<!-- Hides all content until loader animation is finished. -->
 <div style="display:none;" id="table-content">
 
         <!-- Content 2 - Explore -->
@@ -242,15 +262,58 @@
                     <!-- End Table row #5 -->
                 </tbody>
             </table>
+            <!--End table content-->
         </section>
 
-
-    <!-- Content 3 - Progress -->
+    <!-- Content 3 - Progress/Achievements/Level -->
     <section class="progress">
         <h1 class="header-font-color" style="text-align: center">Progress</h1>
     </section>
 
 </div>
+
+
+<!-- Footer section of the website -->
+<footer>
+    <section class="footer-list-container">
+      <ul class="footer-list" style="padding-left:0px;">
+          <li>What is Explore Animals</li>
+          <li class="footer-list-item">Home</li>
+          <li class="footer-list-item">About</li>
+          <li class="footer-list-item">Technology</li>
+      </ul>
+    </section>
+
+    <section class="footer-list-container">
+      <ul class="footer-list">
+          <li>Resources</li>
+          <li class="footer-list-item">Jobs</li>
+          <li class="footer-list-item">Support</li>
+          <li class="footer-list-item">Trello</li>
+          <li class="footer-list-item">Wiki</li>
+          <li class="footer-list-item">Explore</li>
+      </ul>
+    </section>
+
+    <section class="footer-list-container">
+      <ul class="footer-list">
+          <li>Community</li>
+          <li class="footer-list-item">Blog</li>
+          <li class="footer-list-item">Twitter</li>
+          <li class="footer-list-item">Github</li>
+      </ul>
+    </section>
+
+    <!-- Footer Buttons -->
+    <p class="footer-contact">Contact</p>
+    <p class="footer-support">Support</p>
+</footer>
+
+</body>
+
+
+<!-- Footer section of the website -->
+
 
 
 <script>
@@ -274,7 +337,7 @@ function carousel() {
 // Image loader script ====================================================== //
 var myVar;
 function myFunction() {
-  myVar = setTimeout(showPage, 3000);
+  myVar = setTimeout(showPage, 1500);
 }
 
 function showPage() {
@@ -282,14 +345,5 @@ function showPage() {
   document.getElementById("table-content").style.display = "block";
 }
 </script>
-
-
-</body>
-
-<!-- Footer -->
-<footer>
-</footer>
-
-
 
 </html>

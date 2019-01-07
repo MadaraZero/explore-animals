@@ -1,13 +1,59 @@
+/* Header Section ============================= */
 header {
     box-sizing: border-box;
     background-color: #151314;
     height: 70px;
 }
 
+.logo {
+    position: absolute;
+    top: 17px;
+    left: 25px;
+    width: 100px;
+    height: 52px;
+}
+
+.bttns-container {
+    position: right;
+    right: 0px;
+    top: 0px;
+}
+
+.donate-bttn {
+    position: absolute;
+    top: 19px;
+    right: 120px;
+    margin-right: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    background-color: #a4ef2f;
+    padding: 5px 15px 5px 15px;
+
+}
+
+.login-icon {
+    position: absolute;
+    top: 24px;
+    right: 75px;
+    width: 40px;
+    height: 40px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 32px;
+    right: 25px;
+    width: 25px;
+    height: 25px;
+}
+/* End Header section -- */
+
+
 body {
     /* background-color: #1d2637; */
     background-color: #212121;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-style: light;
     font-size: 1vw;
 }
 
@@ -17,19 +63,33 @@ h1, p {
     margin-right: 25%;
 }
 
+hr {
+    display: block;
+    height: 0px;
+    border: 0;
+    border-top: 1px solid rgba(153, 255, 51, .5);
+
+    margin: 0;
+    padding: 0;
+}
+
 .paragraph-font-color {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
     color: white;
 }
 
 .header-font-color {
-    color: #a4ef2f
+    font-family: 'Roboto', sans-serif;
+    color: #a4ef2f;
 }
 
 h1.h1-class {
+    font-style: normal;
     box-sizing: border-box;
     position: relative;
     margin-top: 0px;
-    margin-left: 100px;
+    margin-left: 140px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: left;
@@ -43,7 +103,7 @@ section.introduction {
     box-sizing: border-box;
     background-color: #151314;
     margin: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     padding: 30px 75px 30px 75px;
 }
 /* End Introduction website section -- */
@@ -93,6 +153,71 @@ section.progress {
 
 }
 /* End Progress website section -- */
+
+
+/* Footer website section ==================== */
+footer {
+    background-color: #151314;
+    height: 160px;
+    margin-top: 59.2%;
+    margin-bottom: auto;
+}
+
+.footer-list-container {
+    float: left;
+    margin: 0px 25px 0px 25px;
+}
+
+.footer-list {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #645a5f;
+    font-size: 17px;
+    list-style: none;
+}
+
+.footer-list-item {
+    color: #403a3d;
+    margin: 2px 0px 2px 0px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.footer-list-item:hover {
+    color: gray;
+}
+
+.footer-contact {
+    font-family: 'Rubik', sans-serif;
+    color: #403a3d;
+    padding: 2px 15px 2px 15px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    margin: 0px 890px 0px 890px;
+    text-align: center;
+    position: relative;
+    left: 700px;
+    top: 50px;
+}
+
+.footer-support {
+    font-family: 'Rubik', sans-serif;
+    color: #403a3d;
+    padding: 2px 15px 2px 15px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    margin: 0px 890px 0px 890px;
+    text-align: center;
+    position: relative;
+    left: 825px;
+    top: 19px;
+}
+
+.footer-contact:hover, .footer-support:hover {
+    color: gray;
+}
+/* End Footer website section -- */
 
 
 /* Loader animation =========================== */
@@ -233,19 +358,12 @@ section.progress {
     font-size: 3em;
 }
 
-/* img.logo {
-    position: absolute;
-    top: 150px;
-    left: 150px;
-    height: 250px;
-    width: 250px;
-} */
-
 .circle {
     position: absolute;
     bottom: 50px;
     right: 50px;
     background: #a4ef2f;
+    background-image: linear-gradient(#0cff00, #a4ef2f);
     width: 100px;
     height: 100px;
     border-radius: 50%;
