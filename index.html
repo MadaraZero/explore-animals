@@ -11,308 +11,245 @@
 </head>
 
 <body onload="myFunction()">
+<!-- <body> -->
 
 
-<!-- Header section of the website -->
-<div>
-    <hr/>
-        <header>
-            <h1 class="h1-class header-font-color">Explore Animals</h1>
-            <img class="logo" src="img/graphics/logo-a.png" alt="logo">
+<!-- Webpage layout -->
+<div class="grid-container">
+  <div class="Header">
+      <!-- Header section of the website -->
+          <!-- <hr/> -->
+              <h1 class="h1-class header-font-color">Explore Animals</h1>
+              <img class="logo" src="img/graphics/logo-a.png" alt="logo">
 
-            <!-- Button place holders -->
-            <div class="bttns-container">
-                <h1 class="donate-bttn">DONATE</h1>
-                <img class="login-icon" src="img/graphics/login-icon.png" alt="login-icon">
-                <img class="search-icon" src="img/graphics/search-icon.png" alt="search-icon">
+              <!-- Button place holders -->
+              <div class="bttns-container">
+                  <h1 class="donate-bttn">DONATE</h1>
+                  <img class="login-icon" src="img/graphics/login-icon.png" alt="login-icon">
+                  <img class="search-icon" src="img/graphics/search-icon.png" alt="search-icon">
+              </div>
+          <!-- <hr/> -->
+  </div>
+
+
+  <!-- Animal slideshow -->
+  <div class="Slideshow">
+          <div>
+              <img class="mySlides fade" style="transform: scaleX(-1)" src="img/bat_1_header.jpg" alt="bat">
+              <img class="mySlides fade" src="img/bobcat_1_header.jpg" alt="bobcat">
+              <img class="mySlides fade" src="img/butterfly_1_header.jpg" alt="butterfly">
+              <img class="mySlides fade" src="img/curassow_1_header.jpg" alt="curassow">
+              <img class="mySlides fade" src="img/eider_1_header.jpg" alt="eider">
+              <img class="mySlides fade" src="img/geck_1_header.jpg" alt="gecko">
+              <img class="mySlides fade" src="img/monal_1_header.jpg" alt="monal">
+              <img class="mySlides fade" src="img/monkey_1_header.jpg" alt="monkey">
+              <img class="mySlides fade" src="img/monkey_2_header.jpg" alt="monkey2">
+              <img class="mySlides fade" src="img/peacock_1_header.jpg" alt="peacock">
+              <div class="circle"></div>
+          </div>
+  </div>
+
+
+  <!-- Sub content - About/Introduction -->
+  <div class="About">
+      <div class="text-container">
+          <h1 class="header-font-color" style="margin-bottom: 5px">About</h1>
+          <p class="paragraph-font-color">Welcome to Explore Animals an educational website aimed to learn
+              about animals in a fun and engaging manner. Click on an animal to learn about it. Complete the
+              mini-quiz without making any mistakes. Doing so will give you points and achievements!
+          </p>
+     </div>
+  </div>
+
+
+  <!-- Loader animation -->
+  <div id="loader">
+  <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div>
+  </div><div></div><div></div></div>
+  </div>
+
+
+  <!-- Hides all content until loader animation is finished. -->
+  <div style="display:none;" id="content-container">
+
+        <!-- Main content (Explore & Progress) -->
+        <div class="Content">
+            <!-- Content - Explore -->
+            <div class="Explore">
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/1.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/3.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/4.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/5.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/6.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/7.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/8.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/9.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/10.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/11.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/12.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/13.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/14.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/15.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/16.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/17.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/18.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/19.jpg">
+                        </div>
+                    </div>
+
+                    <div class="img-container">
+                        <div class="img-item">
+                            <img src="img/explr-imgs/20.jpg">
+                        </div>
+                    </div>
             </div>
-        </header>
-    <hr/>
-</div>
 
 
-<!-- Animal slideshow -->
-<div class="slideshow-container" cite="https://www.nationalgeographic.org/photoark/explore/">
+            <!-- Content - Progress/Achievements/Level -->
+            <div class="Progress">
+                    <h1 class="header-font-color" style="text-align: center">Progress</h1>
+            </div>
 
-    <div>
-        <img class="mySlides fade" style="transform: scaleX(-1)" src="img/bat_1_header.jpg" alt="bat">
-        <img class="mySlides fade" src="img/bobcat_1_header.jpg" alt="bobcat">
-        <img class="mySlides fade" src="img/butterfly_1_header.jpg" alt="butterfly">
-        <img class="mySlides fade" src="img/curassow_1_header.jpg" alt="curassow">
-        <img class="mySlides fade" src="img/eider_1_header.jpg" alt="eider">
-        <img class="mySlides fade" src="img/geck_1_header.jpg" alt="gecko">
-        <img class="mySlides fade" src="img/monal_1_header.jpg" alt="monal">
-        <img class="mySlides fade" src="img/monkey_1_header.jpg" alt="monkey">
-        <img class="mySlides fade" src="img/monkey_2_header.jpg" alt="monkey2">
-        <img class="mySlides fade" src="img/peacock_1_header.jpg" alt="peacock">
-        <div class="circle"></div>
+        </div>
+
+    </div> <!--End hide content until loader is done -->
+
+
+    <!-- Footer section of the website -->
+    <div class="Footer">
+
+            <section class="footer-list-container">
+              <ul class="footer-list" style="padding-left:0px;">
+                  <li>What is Explore Animals</li>
+                  <li class="footer-list-item">Home</li>
+                  <li class="footer-list-item">About</li>
+                  <li class="footer-list-item">Technology</li>
+              </ul>
+            </section>
+
+            <section class="footer-list-container">
+              <ul class="footer-list">
+                  <li>Resources</li>
+                  <li class="footer-list-item">Jobs</li>
+                  <li class="footer-list-item">Support</li>
+                  <li class="footer-list-item">Trello</li>
+                  <li class="footer-list-item">Wiki</li>
+                  <li class="footer-list-item">Explore</li>
+              </ul>
+            </section>
+
+            <section class="footer-list-container">
+              <ul class="footer-list">
+                  <li>Community</li>
+                  <li class="footer-list-item">Blog</li>
+                  <li class="footer-list-item">Twitter</li>
+                  <li class="footer-list-item">Github</li>
+              </ul>
+            </section>
+
+            <!-- Footer Buttons -->
+            <p class="footer-contact">Contact</p>
+            <p class="footer-support">Support</p>
+
     </div>
 
-</div>
-
-
-<!-- Content 1 - About/Introduction -->
-<hr/>
-<section class="introduction">
-    <h1 class="header-font-color" style="margin-bottom: 5px">About</h1>
-    <p class="paragraph-font-color">Welcome to Explore Animals an educational website aimed to learn
-        about animals in a fun and engaging manner. Click on an animal to learn about it. Complete the
-        mini-quiz without making any mistakes. Doing so will give you points and achievements!</p>
-</section>
-<hr/>
-
-
-
-<!-- Loader animation -->
-<div id="loader">
-<div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div>
-</div><div></div><div></div></div>
-</div>
-
-
-<!-- Hides all content until loader animation is finished. -->
-<div style="display:none;" id="table-content">
-
-        <!-- Content 2 - Explore -->
-        <section class="explore">
-            <table class="image-table">
-                <tbody>
-                    <!-- Table row #1 -->
-                    <tr>
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/1.jpg">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/2.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/3.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/4.jpg">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!-- End Table row #1 -->
-
-
-                    <!-- Table row #2 -->
-                    <tr>
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/5.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/6.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/7.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/8.jpg">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!-- End Table row #2 -->
-
-
-                    <!-- Table row #3 -->
-                    <tr>
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/9.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/10.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/11.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/12.jpg">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!-- End Table row #2 -->
-
-
-                    <!-- Table row #4 -->
-                    <tr>
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/13.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/14.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/15.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/16.jpg">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!-- End Table row #4 -->
-
-
-                    <!-- Table row #5 -->
-                    <tr>
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/17.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/18.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/19.jpg">
-                                </div>
-                            </div>
-                        </td>
-
-                        <td>
-                            <div class="img-container">
-                                <div class="img-item">
-                                    <img src="img/explr-imgs/20.jpg">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!-- End Table row #5 -->
-                </tbody>
-            </table>
-            <!--End table content-->
-        </section>
-
-    <!-- Content 3 - Progress/Achievements/Level -->
-    <section class="progress">
-        <h1 class="header-font-color" style="text-align: center">Progress</h1>
-    </section>
-
-</div>
-
-
-<!-- Footer section of the website -->
-<footer>
-    <section class="footer-list-container">
-      <ul class="footer-list" style="padding-left:0px;">
-          <li>What is Explore Animals</li>
-          <li class="footer-list-item">Home</li>
-          <li class="footer-list-item">About</li>
-          <li class="footer-list-item">Technology</li>
-      </ul>
-    </section>
-
-    <section class="footer-list-container">
-      <ul class="footer-list">
-          <li>Resources</li>
-          <li class="footer-list-item">Jobs</li>
-          <li class="footer-list-item">Support</li>
-          <li class="footer-list-item">Trello</li>
-          <li class="footer-list-item">Wiki</li>
-          <li class="footer-list-item">Explore</li>
-      </ul>
-    </section>
-
-    <section class="footer-list-container">
-      <ul class="footer-list">
-          <li>Community</li>
-          <li class="footer-list-item">Blog</li>
-          <li class="footer-list-item">Twitter</li>
-          <li class="footer-list-item">Github</li>
-      </ul>
-    </section>
-
-    <!-- Footer Buttons -->
-    <p class="footer-contact">Contact</p>
-    <p class="footer-support">Support</p>
-</footer>
+</div> <!-- End grid container web page layouts -->
 
 </body>
-
-
-<!-- Footer section of the website -->
-
 
 
 <script>
@@ -341,7 +278,7 @@ function myFunction() {
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
-  document.getElementById("table-content").style.display = "block";
+  document.getElementById("content-container").style.display = "block";
 }
 
 
