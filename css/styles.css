@@ -4,6 +4,14 @@ html, body, .grid-container {
     margin: 0;
 }
 
+a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+
 .grid-container * {
  /* border: 1px solid red; */
  position: relative;
@@ -29,13 +37,15 @@ html, body, .grid-container {
 }
 
 .Slideshow {
+    margin-top: 5px;
     grid-area: Slideshow;
 }
 
 .About {
+    height: 145px;
     grid-area: About;
     background-color: #151314;
-    margin-top: 6px;
+    margin-top: 8px;
     margin-bottom: 5px;
 }
 
@@ -51,10 +61,36 @@ html, body, .grid-container {
 
 .Explore {
     grid-area: Explore;
-    max-width: 1315px;
+    max-width: 1305px;
     height: 1070px;
     overflow: auto;
 }
+
+
+/* Explore Scrollbar ========================= */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f12e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #151314;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a4ef2f;
+  /* background-image: linear-gradient(#0cff00, #a4ef2f); */
+}
+/* End Explore Scrollbar -- */
+
 
 .Progress {
     /* background-color: #151314; */
@@ -128,17 +164,25 @@ header {
 
 .logo {
     position: absolute;
-    top: 10px;
+    top: -62px;
     left: 25px;
     width: 100px;
     height: 52px;
+}
+
+.logo2 {
+    position: absolute;
+    top: -35px;
+    right: 800px;
+    width: 225px;
+    opacity: .1;
 }
 
 .bttns-container {
     position: relative;
     width: 300px;
     left: 1600px;
-    top: -60px;
+    top: -79px;
     border: 0px;
 }
 
@@ -150,6 +194,7 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     background-color: #a4ef2f;
+    color: black;
     padding: 5px 15px 5px 15px;
 
 }
@@ -177,7 +222,8 @@ body {
     background-color: #212121;
     /* font-family: 'Montserrat', sans-serif; */
     font-style: light;
-    font-size: 1vw;
+    /* font-size: 1vw; */
+    font-size: 18px;
 }
 
 h1, p {
@@ -187,13 +233,15 @@ h1, p {
 }
 
 hr {
+    position: relative;
     display: block;
+    top: 0;
     height: 0px;
     border: 0;
-    border-top: 1px solid rgba(153, 255, 51, .5);
+    border-top: 5px solid #151314;
 
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 .paragraph-font-color {
@@ -210,7 +258,7 @@ hr {
 h1.h1-class {
     font-style: normal;
     position: relative;
-    top: 11px;
+    top: -10px;
     margin: 0px;
     padding: 0px;
     left: 150px;
@@ -238,6 +286,7 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: #645a5f;
+    color: #a4ef2f;
     font-size: 17px;
     list-style: none;
 }
@@ -262,7 +311,7 @@ footer {
     margin: 0px 890px 0px 890px;
     text-align: center;
     position: relative;
-    left: 700px;
+    left: 680px;
     top: 50px;
 }
 
@@ -281,7 +330,7 @@ footer {
 }
 
 .footer-contact:hover, .footer-support:hover {
-    color: gray;
+    color: #a4ef2f;;
 }
 /* End Footer website section -- */
 
@@ -534,6 +583,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
     width: 100px;
     height: 100px;
     border-radius: 50%;
+}
+
+.vertical-line {
+    position: absolute;
+    background: rgba(0, 0, 0, .25);
+    left: 455px;
+    top: 18px;
+    width: 5px;
+    height: 110px;
+    margin-bottom: 15px;
 }
 
 .slideshow-container {
