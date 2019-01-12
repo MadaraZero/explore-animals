@@ -1,0 +1,34 @@
+<link href="bootstrap.css" rel="stylesheet" id="bootstrap-css">
+<script src="quiz.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div id="myModal" class="modal fade in" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3>Take a Quiz!</h3>
+			</div>
+			<div class="modal-body">
+
+				<div class="quiz" data-toggle="buttons">
+
+					<label class="btn btn-labeled btn-default btn-block">
+						<span class="btn-label"><i class="glyphicon"></i></span><input type="radio" name="q" value="1">answer one
+					</label>
+					<label class="btn btn-labeled btn-default btn-block">
+						<span class="btn-label"><i class="glyphicon"></i></span><input type="radio" name="q" value="2">answer two
+					</label>
+					<label class="btn btn-labeled btn-default btn-block">
+						<span class="btn-label"><i class="glyphicon"></i></span><input type="radio" name="q" value="3">answer three
+					</label>
+				</div>
+
+			</div>
+			<div class="modal-footer">
+                <span id="answer"></span>
+                <!-- hide close button, hide when correct choice only! -->
+			</div>
+		</div>
+	</div>
+</div>

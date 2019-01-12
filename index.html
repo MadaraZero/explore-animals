@@ -19,17 +19,32 @@
 
   <header class="Header">
   <!-- Header section of the website -->
-    <hr>
+        <div class="header-content-container">
           <h1 class="h1-class header-font-color">Explore Animals</h1>
           <a href="#"><img class="logo" src="img/graphics/logo-a.png" alt="logo"></a>
 
           <!-- Button place holders -->
           <nav class="bttns-container">
-              <a href="#"><h1 class="donate-bttn">DONATE</h1></a>
+              <a target="_blank"href="https://donate.nationalgeographic.org/Page.aspx?pid=184"><h1 class="donate-bttn">DONATE</h1></a>
               <a href="#"><img class="login-icon" src="img/graphics/login-icon.png" alt="login-icon"></a>
-              <a href="#"><img class="search-icon" src="img/graphics/search-icon.png" alt="search-icon"></a>
+
+              <!-- Search bar -->
+              <a href="#openModal21">
+                  <img class="search-icon" src="img/graphics/search-icon.png" alt="search-icon">
+              </a>
+
+              <div id="openModal21" class="modalWindow">
+              <div>
+                  <a href="#close" title="Close" class="close">X</a>
+                  <div class="search-bar" >
+                      <h2 class="header-font-color">SEARCH</h2>
+                      <input type="text" name="search-bar" placeholder="...">
+                  </div>
+              </div>
+              </div>
+
           </nav>
-    <hr>
+      </div>
 </header>
 
 
@@ -432,8 +447,8 @@
             </section>
 
             <!-- Footer Buttons -->
-            <a href="#"><p class="footer-contact">Contact</p></a>
-            <a href="#"><p class="footer-support">Support</p></a>
+                <a href="#"><p class="footer-contact">Contact</p></a>
+                <a href="#"><p class="footer-support">Support</p></a>
 
             <!-- logo -->
             <a href="#"><img class="logo2" src="img/graphics/logo-b.png" alt="logo image"></a>
